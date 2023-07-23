@@ -1,0 +1,128 @@
+/* Styling for the first header */
+.header:nth-child(1) {
+    color: white;
+    background-color: #2d2727;
+    /* Gray background for the first header */
+    padding: 20px;
+    text-align: left;
+}
+
+/* Styling for the titles in the first header */
+.header:nth-child(1) .title,
+.header:nth-child(1) .subtitle {
+    color: #0990f0;
+    /* Gray color for the titles */
+}
+
+/* Styling for the second header */
+.header:nth-child(2) {
+    list-style: none;
+    background-color: #00aaff;
+    /* Blue background for the second header */
+    padding: 10px;
+    text-align: left;
+}
+
+/* Styling for the links in the second header */
+.header:nth-child(2) a {
+    list-style-type: none;
+    color: #fff;
+    /* White color for the links in the second header */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+p {
+    text-align: left;
+}
+
+/* Styling for the second header */
+.header:nth-child(2) {
+    background-color: #29424f;
+    /* Blue background for the second header */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styling for the links in the second header */
+.header:nth-child(2) li {
+    list-style-type: none;
+    /* Remove bullet points from list items (links) */
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+}
+
+
+.header:nth-child(2) a {
+    color: #fff;
+    /* White color for the links in the second header */
+    text-decoration: none;
+    margin: 3px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container {
+    position: relative;
+    float: right;
+    margin: -90px 10px 10px 10px;
+    max-width: 100%;
+    height: auto;
+    border: 3px solid rgb(8, 146, 196);
+    border-radius: 50%;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-justify: inter-word !important;
+}
+
+h3 {
+    text-align: left;
+    color: rgb(8, 146, 196);
+    text-decoration: underline;
+}
+
+.li1 {
+    list-style-type: none;
+    display: inline;
+    margin: 30px;
+}
+
+.normal-text {
+    font-weight: normal;
+    margin: 20px;
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container>div {
+
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.flex-container1 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container1>div {
+    border-radius: 20%;
+    background-color: #555151;
+    margin: 10px;
+    padding: 25px;
+    font-size: 30px;
+}
+h2{
+    color: #0990f0;
+}
