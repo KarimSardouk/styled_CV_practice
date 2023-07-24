@@ -1,29 +1,32 @@
 header {
+    font-size: 15px;
+    ;
     background-color: #555151;
+    color: white;
+    right: 30%;
 }
 
 .nav {
     background-color: blue;
     height: 50px;
     padding-top: 10px;
-    margin:auto;
+    margin: auto;
     font-size: 15px;
 }
 
 .nav li {
-
+    text-align: left;
     list-style-type: none;
     display: inline;
-    padding: 30px;
-
-
-
+    padding: 45px;
+    margin: 25px;
 }
 
 .nav a {
     text-decoration: none;
     color: white;
-
+    text-align: left;
+    text-align: center;
 }
 
 .image-container {
@@ -41,6 +44,7 @@ header {
 body {
     font-family: 'Montserrat', sans-serif;
     text-justify: inter-word !important;
+    font-size: 16px;
 }
 
 h3 {
@@ -78,23 +82,29 @@ h3 {
 }
 
 .flex-container1 {
+    font-size: 20px;
     color: white;
     display: flex;
     justify-content: center;
     flex: 50%;
-    margin: 30px;
+    margin: 40px;
+    position: right;
+    justify-content: flex-end;
+
 }
 
 .flex-container1 div {
     border-radius: 20%;
     background-color: #555151;
-    margin: 10px;
-    padding: 20px;
+    margin: 5px;
+    padding: 15px;
     font-size: 10px;
+    position: right;
 }
 
 h2 {
     color: #0990f0;
+    position: 10px;
 }
 
 .proficiency {
@@ -115,5 +125,53 @@ h2 {
     width: 50%;
 }
 
-@media screen and (max-width: 768px) {
-    
+.fixed-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    background-color: #0990f0;
+    text-decoration: none;
+}
+
+.fixed-list li {
+    flex: 1;
+    text-align: center;
+    /* Optional: To add some spacing around the list items */
+    padding: 30px;
+    text-decoration: none;
+}
+
+.fixed-list li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* Rest of your CSS code (unchanged) */
+
+/* Regular styling for larger screens */
+
+
+/* Media query for smaller screens (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+    .flex-container {
+        flex-direction: column;
+        /* Stack the flex items vertically on smaller screens */
+    }
+
+    .flex-container div {
+        flex-basis: auto;
+        /* Allow the items to take full width in the column layout */
+    }
+
+    .flex-container1 {
+        text-align: center;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+}
