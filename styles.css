@@ -1,75 +1,38 @@
-/* Styling for the first header */
-.header:nth-child(1) {
+header {
+    background-color: #555151;
+}
+
+.nav {
+    background-color: blue;
+    height: 50px;
+    padding-top: 10px;
+    margin:auto;
+    font-size: 15px;
+}
+
+.nav li {
+
+    list-style-type: none;
+    display: inline;
+    padding: 30px;
+
+
+
+}
+
+.nav a {
+    text-decoration: none;
     color: white;
-    background-color: #2d2727;
-    /* Gray background for the first header */
-    padding: 20px;
-    text-align: left;
-}
 
-/* Styling for the titles in the first header */
-.header:nth-child(1) .title,
-.header:nth-child(1) .subtitle {
-    color: #0990f0;
-    /* Gray color for the titles */
-}
-
-/* Styling for the second header */
-.header:nth-child(2) {
-    list-style: none;
-    background-color: #00aaff;
-    /* Blue background for the second header */
-    padding: 10px;
-    text-align: left;
-}
-
-/* Styling for the links in the second header */
-.header:nth-child(2) a {
-    list-style-type: none;
-    color: #fff;
-    /* White color for the links in the second header */
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-p {
-    text-align: left;
-}
-
-/* Styling for the second header */
-.header:nth-child(2) {
-    background-color: #29424f;
-    /* Blue background for the second header */
-    text-align: center;
-    padding: 20px;
-}
-
-/* Styling for the links in the second header */
-.header:nth-child(2) li {
-    list-style-type: none;
-    /* Remove bullet points from list items (links) */
-    display: inline-block;
-    margin: 10px;
-    padding: 5px;
-}
-
-
-.header:nth-child(2) a {
-    color: #fff;
-    /* White color for the links in the second header */
-    text-decoration: none;
-    margin: 3px;
-    padding: 40px;
-    display: flex;
-    justify-content: center;
 }
 
 .image-container {
     position: relative;
     float: right;
-    margin: -90px 10px 10px 10px;
-    max-width: 100%;
-    height: auto;
+    margin-top: -70px;
+    margin-right: 30px;
+    width: 150px;
+    height: 150px;
     border: 3px solid rgb(8, 146, 196);
     border-radius: 50%;
 
@@ -100,30 +63,57 @@ h3 {
 
 .flex-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex-direction: row;
+
+
 }
 
-.flex-container>div {
-
+.flex-container div {
     margin: 10px;
     padding: 20px;
     font-size: 30px;
+    flex: 50%;
 }
 
 .flex-container1 {
     color: white;
     display: flex;
     justify-content: center;
+    flex: 50%;
+    margin: 30px;
 }
 
-.flex-container1>div {
+.flex-container1 div {
     border-radius: 20%;
     background-color: #555151;
     margin: 10px;
-    padding: 25px;
-    font-size: 30px;
+    padding: 20px;
+    font-size: 10px;
 }
 
 h2 {
     color: #0990f0;
 }
+
+.proficiency {
+    color: rgb(8, 146, 196);
+}
+
+.flex-left {
+    flex-direction: row;
+    flex: 1;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.flex-right {
+    flex-direction: row;
+    flex: 1;
+    align-items: flex-start;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    
